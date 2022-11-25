@@ -32,6 +32,7 @@
     <!-- Mouseflow: heatmap and recording tool -->
     <script type="text/javascript" src="https://cdn.mouseflow.com/projects/31c8bb38-cfeb-4bd8-a60c-d5650a6d6f23.js"
             async=""></script>
+    <script type="text/javascript" src="script/moment.js"></script>
 
     <link rel="stylesheet" href="https://d36jcksde1wxzq.cloudfront.net/main.44d5c5511cf8bcc998ae.css">
 </head>
@@ -49,9 +50,8 @@
                                 <div class="styles__content___2OTL6">
                                     <div class="styles__grid5___2S2Ei">
                                         <div class="styles__headline___3KoOn">
-                                            Коты на сайте:
+                                            Практическая работа 1 Фадеев Д.А. ИНМО-02-21
                                         </div>
-
                                         <#if cats??>
                                             <#list cats as cat>
                                                 <a class="styles__cardWrapper___x_xbl" href="${cat.url}.jpg">
@@ -85,6 +85,11 @@
                                             Котов нет :(
                                         </#if>
 
+
+                                        <div class="styles__headline___3KoOn">
+                                            Текущее время через сервер: ${time}
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -96,4 +101,6 @@
     </div>
 </div>
 </body>
+
+<script type="text/javascript" src="script/script.js" ></script>
 </html>
